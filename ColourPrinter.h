@@ -34,7 +34,7 @@
 #define white "1;37"
 #endif
 
-void colourPrintWin();
+void colourPrintWin(char *string, char *colour);
 void colourPrintMac(char *string, char *colour);
 
 #endif /* defined(__ColourPrinter__ColourPrinter__) */
