@@ -12,6 +12,24 @@ In your C/C++/Objective-C program, add
 #include "ColourPrinter.h"
 ```
 
+## Supported colours:
+- black
+- dark_grey
+- blue
+- light_blue
+- green
+- light_green
+- cyan
+- light_cyan
+- red
+- light_red
+- purple
+- light_purple
+- brown_orange
+- yello
+- light_grey
+- white
+
 ## Functions
 
 ### Available functions:
