@@ -12,6 +12,18 @@ In your C/C++/Objective-C program, add
 #include "ColourPrinter.h"
 ```
 
+## Functions
+
+### Available functions:
+- `cPuts()`
+
+#### `cPuts()`
+```c
+#define cPuts(string, colour) printf("\033[%sm%s%s\n", colour, string, END_COLOUR);
+```
+It is similar to the C function ```puts()```, found in ```stdio.h```. It prints out text to ```stdout``` that does not need to be formatted, and then it appends a new line.
+
+
 ## Example:
 
 ```c
