@@ -53,7 +53,7 @@ It is similar to the C function ```puts()```, found in ```stdio.h```. It prints 
 ```c
 #define cPrintf(colour, string, ...) printf("\033[%sm", colour);printf(string, __VA_ARGS__);puts(END_COLOUR);
 ```
-It is similar to the C function ```printf()```, found in ```stdio.h```. It prints out formatted text to ```stdout``` that does not need to be formatted.
+It is similar to the C function ```printf()```, found in ```stdio.h```. It prints out formatted text to ```stdout```.
 
 ## Example:
 
