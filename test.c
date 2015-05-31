@@ -9,6 +9,6 @@
 #include "ColourPrinter.h"
 
 int main(int argc, const char * argv[]) {
-    colourPrint("Hello World", purple);
+    cPuts("Hello World", purple);
     return 0;
 }

@@ -32,9 +32,7 @@
 #define yellow "1;33"
 #define light_grey "0;37"
 #define white "1;37"
+#define cPuts(string, colour) printf("\033[%sm%s%s", colour, string, END_COLOUR);
 
 #endif
-
-void colourPrint(char *string, char *colour);
-
 #endif /* defined(__ColourPrinter__ColourPrinter__) */
