@@ -12,7 +12,7 @@ In your C/C++/Objective-C program, add
 #include "ColourPrinter.h"
 ```
 
-###Example:
+## Example:
 
 ```c
 #include "ColourPrinter.h"
@@ -30,9 +30,12 @@ Visual C++ has not been tested, but it should work.
 
 ## FAQ
 
-###I want to help, can I?
+### I want to help, can I?
 Absolutely, you can. Feel free to submit a pull request or issue. I will reply, usually by 24 hrs. Not all pull requests can be honoured, please do not be discouraged if it is rejected.
 
-###Members working on this project
+### What is https://github.com/nsandman09/ColorPrinter? Is it better?
+It is a copy of the idea thought of when creating this repository. This repository is original.
+
+### Members working on this project
 
 vidurgupta01 - Owner
