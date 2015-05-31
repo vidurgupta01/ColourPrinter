@@ -12,9 +12,10 @@
 #include <stdio.h>
 
 #ifdef _WIN32
-
+// Windows: To be implemented
 #else
 
+// Colours
 #define END_COLOUR "\033[0m"
 #define black "0;30"
 #define dark_grey "1;30"
@@ -32,6 +33,8 @@
 #define yellow "1;33"
 #define light_grey "0;37"
 #define white "1;37"
+
+// cPuts Macro Definition
 #define cPuts(string, colour) printf("\033[%sm%s%s", colour, string, END_COLOUR);
 
 #endif
