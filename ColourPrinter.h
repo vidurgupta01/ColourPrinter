@@ -37,6 +37,7 @@
 // Macro Definitions
 #define cPuts(string, colour) printf("\033[%sm%s%s\n", colour, string, END_COLOUR);
 #define cPuts_noline(string, colour) printf("\033[%sm%s%s", colour, string, END_COLOUR);
+#define cPrintf(colour, string, ...) printf("\033[%sm", colour);printf(string, __VA_ARGS__);puts(END_COLOUR);
 
 #endif
 #endif /* defined(__ColourPrinter__ColourPrinter__) */
