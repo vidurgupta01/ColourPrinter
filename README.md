@@ -61,7 +61,6 @@ It is similar to the C function ```printf()```, found in ```stdio.h```. It print
  #include "ColourPrinter.h"
  
  int main(int argc, const char * argv[]) {
-     cPuts("Hello World", purple);
      cPuts_noline("I am printing something with no new line!", purple);
      cPuts("\nNow we are in new line", yellow)
      cPrintf(blue, "This support formatted strings, like %d, and let's try %s", 5, "string");
