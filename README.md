@@ -12,18 +12,13 @@ In your C/C++/Objective-C program, add
 #include "ColourPrinter.h"
 ```
 
-To use this in your programs, simply call the function,
-```
-colourPrint(char *string, char *colour);
-```
-
 ###Example:
 
 ```
 #include "ColourPrinter.h"
 
 int main(int argc, const char * argv[]) {
-    colourPrint("Hello World", purple);
+    cPuts("Hello World", purple);
     return 0;
 }
 ```
