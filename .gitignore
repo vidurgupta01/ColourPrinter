@@ -7,3 +7,8 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Binaries #
+############
+a.out
+a.exe
