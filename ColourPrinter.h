@@ -35,7 +35,7 @@
 #define white "1;37"
 
 // cPuts Macro Definition
-#define cPuts(string, colour) printf("\033[%sm%s%s", colour, string, END_COLOUR);
+#define cPuts(string, colour) printf("\033[%sm%s%s\n", colour, string, END_COLOUR);
 
 #endif
 #endif /* defined(__ColourPrinter__ColourPrinter__) */
