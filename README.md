@@ -8,13 +8,13 @@ First add the ColourPrinter.h file in the directory your project is in. I'm curr
 
 In your C/C++/Objective-C program, add
 
-```
+```c
 #include "ColourPrinter.h"
 ```
 
 ###Example:
 
-```
+```c
 #include "ColourPrinter.h"
 
 int main(int argc, const char * argv[]) {
