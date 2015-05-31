@@ -16,7 +16,6 @@
 #else
 
 // Colours
-#define END_COLOUR "\033[0m"
 #define black "0;30"
 #define dark_grey "1;30"
 #define blue "0;34"
@@ -35,9 +34,9 @@
 #define white "1;37"
 
 // Macro Definitions
-#define cPuts(string, colour) printf("\033[%sm%s%s\n", colour, string, END_COLOUR);
-#define cPuts_noline(string, colour) printf("\033[%sm%s%s", colour, string, END_COLOUR);
-#define cPrintf(colour, string, ...) printf("\033[%sm", colour);printf(string, __VA_ARGS__);puts(END_COLOUR);
+#define cPuts(string, colour) printf("\033[%sm%s\033[0m\n", colour, string);
+#define cPuts_noline(string, colour) printf("\033[%sm%s\033[0m", colour, string);
+#define cPrintf(colour, string, ...) printf("\033[%sm", colour);printf(string, __VA_ARGS__);puts("\033[0m");
 
 #endif
 #endif /* defined(__ColourPrinter__ColourPrinter__) */
