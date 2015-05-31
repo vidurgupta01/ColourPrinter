@@ -9,8 +9,7 @@
 #include "ColourPrinter.h"
 
 void colourPrintMac(char *string, char *colour) {
-    // This preprocessor directive checks if the macro END_COLOUR is defined. When compiled with Windows, this macro is useless, and therefore we do not need to define it for Windows. We are simply ensuring that there is no exceptions when compiling on the Windows platform.
-#ifdef END_COLOUR
+#ifndef _WIN32
     printf("\033[%sm%s%s", colour, string, END_COLOUR);
 #endif
 }
