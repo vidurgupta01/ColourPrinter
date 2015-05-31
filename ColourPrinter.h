@@ -12,9 +12,9 @@
 #include <stdio.h>
 
 #ifdef _WIN32
-#define colourPrint colourPrintWin
+
 #else
-#define colourPrint colourPrintMac
+
 #define END_COLOUR "\033[0m"
 #define black "0;30"
 #define dark_grey "1;30"
@@ -32,9 +32,9 @@
 #define yellow "1;33"
 #define light_grey "0;37"
 #define white "1;37"
+
 #endif
 
-void colourPrintWin(char *string, char *colour);
-void colourPrintMac(char *string, char *colour);
+void colourPrint(char *string, char *colour);
 
 #endif /* defined(__ColourPrinter__ColourPrinter__) */

@@ -8,12 +8,10 @@
 
 #include "ColourPrinter.h"
 
-void colourPrintMac(char *string, char *colour) {
-#ifndef _WIN32
+void colourPrint(char *string, char *colour) {
+#ifdef _WIN32
+    
+#else
     printf("\033[%sm%s%s", colour, string, END_COLOUR);
 #endif
-}
-
-void colourPrintWin(char *string, char *colour) {
-    /* Coming soon */
 }
