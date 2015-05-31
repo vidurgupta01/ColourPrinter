@@ -4,7 +4,7 @@ Colour Printer is a cross-platform C library that lets you print text in colour!
 
 ## Installation
 
-First add the ColourPrinter.h and ColourPrinter.m files in the directory your project is in. I'm currently assuming that those files are in the same directory as the project files.
+First add the ColourPrinter.h files in the directory your project is in. I'm currently assuming that those files are in the same directory as the project files.
 
 In your C/C++/Objective-C program, add
 
