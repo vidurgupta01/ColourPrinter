@@ -4,17 +4,29 @@ Colour Printer is a cross-platform C library that lets you print text in colour!
 
 ## Installation
 
-First add the ColourPrinter.h and ColourPrinter.m files in the directory your project is in. I'm currently assuming that those files are in the same directory as the project files.
+First add the ColourPrinter.h file in the directory your project is in. I'm currently assuming that that file are in the same directory as the project files.
 
 In your C/C++/Objective-C program, add
 
-```
+```c
 #include "ColourPrinter.h"
 ```
 
-###Example:
+## Functions
 
+### Available functions:
+- `cPuts()`
+
+#### `cPuts()`
+```c
+#define cPuts(string, colour) printf("\033[%sm%s%s\n", colour, string, END_COLOUR);
 ```
+It is similar to the C function ```puts()```, found in ```stdio.h```. It prints out text to ```stdout``` that does not need to be formatted, and then it appends a new line.
+
+
+## Example:
+
+```c
 #include "ColourPrinter.h"
 
 int main(int argc, const char * argv[]) {
@@ -30,9 +42,12 @@ Visual C++ has not been tested, but it should work.
 
 ## FAQ
 
-###I want to help, can I?
+### I want to help, can I?
 Absolutely, you can. Feel free to submit a pull request or issue. I will reply, usually by 24 hrs. Not all pull requests can be honoured, please do not be discouraged if it is rejected.
 
-###Members working on this project
+### What is https://github.com/nsandman09/ColorPrinter? Is it better?
+It is a copy of the idea thought of when creating this repository. This repository is original.
+
+### Members working on this project
 
 vidurgupta01 - Owner
