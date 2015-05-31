@@ -17,6 +17,7 @@ In your C/C++/Objective-C program, add
 ### Available functions:
 - `cPuts()`
 - `cPuts_noline()`
+- `cPrintf()`
 
 #### `cPuts()`
 ```c
@@ -30,16 +31,24 @@ It is similar to the C function ```puts()```, found in ```stdio.h```. It prints 
 ```
 It is similar to the C function ```puts()```, found in ```stdio.h```. It prints out text to ```stdout``` that does not need to be formatted; however, it does not appends a new line.
 
+#### `cPrintf()`
+```c
+#define cPrintf(colour, string, ...) printf("\033[%sm", colour);printf(string, __VA_ARGS__);puts(END_COLOUR);
+```
+It is similar to the C function ```printf()```, found in ```stdio.h```. It prints out formatted text to ```stdout``` that does not need to be formatted.
 
 ## Example:
 
 ```c
-#include "ColourPrinter.h"
-
-int main(int argc, const char * argv[]) {
-    cPuts("Hello World", purple);
-    return 0;
-}
+ #include "ColourPrinter.h"
+ 
+ int main(int argc, const char * argv[]) {
+-    cPuts("Hello World", purple);
++    cPuts_noline("I am printing something with no new line!", purple);
++    cPuts("\nNow we are in new line", yellow)
++    cPrintf(blue, "This support formatted strings, like %d, and let's try %s", 5, "string");
+     return 0;
+ }
 ```
 
 ## Compatibility
