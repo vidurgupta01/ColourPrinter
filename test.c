@@ -1,5 +1,5 @@
 //
-//  main.c
+//  test.c
 //  ColourPrinter
 //
 //  Created by Vidur Gupta on 5/24/15.
