@@ -78,10 +78,6 @@ Visual C++ has not been tested, but it should work.
 ### I want to help, can I?
 Absolutely, you can. Feel free to submit a pull request or issue. I will reply, usually by 24 hrs. Not all pull requests can be honoured, please do not be discouraged if it is rejected.
 
-### What is https://github.com/nsandman09/ColorPrinter? Is it better?
-If you are here from any of his hyperlinks, you'll laugh at those "proofs".
-Also, It is a copy of the idea thought of when creating this repository. This repository is original. This repo was created a few hours before it was copied by "nsandman09".
-
 ### Members working on this project
 
 vidurgupta01 - Owner
