@@ -12,5 +12,8 @@ Thumbs.db
 ############
 a.out
 a.exe
+
+# Eclipse Setting Files #
+#########################
 .cproject
 .project
