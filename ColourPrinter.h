@@ -9,10 +9,57 @@
 #ifndef __ColourPrinter__ColourPrinter__
 #define __ColourPrinter__ColourPrinter__
 
-#include <stdio.h>
+#include <stdio.h> /* printf(), puts(), fputs(), vfprintf() */
 
 #ifdef _WIN32
-// Windows: To be implemented
+
+#include <windows.h> /* STD_OUTPUT_HANDLE, GetStdHandle(), SetConsoleTextAttribute(), HANDLE */
+#include <stdarg.h> /* va_list, va_start(), va_end() */
+
+// Colours
+#define black 0
+#define dark_grey 8
+#define blue 9
+#define light_blue 115
+#define green 2
+#define light_green 138
+#define cyan 3
+#define light_cyan 155
+#define red 4
+#define light_red 116
+#define purple 5
+#define light_purple 21
+#define brown_orange 6
+#define yellow 14
+#define light_grey 24
+#define white 7
+
+void cPuts(char *string, unsigned char colour) {
+	HANDLE hConsole;
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, colour);
+	puts(string);
+	SetConsoleTextAttribute(hConsole, white);
+}
+
+void cPuts_noline(char *string, unsigned char colour) {
+	HANDLE hConsole;
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, colour);
+	fputs(string, stdout);
+	SetConsoleTextAttribute(hConsole, white);
+}
+
+void cPrintf(unsigned char colour, char *string, ...) {
+	HANDLE hConsole;
+	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, colour);
+	va_list args;
+	va_start(args, string);
+	vfprintf(stdout, string, args);
+	va_end(args);
+	SetConsoleTextAttribute(hConsole, white);
+}
 #else
 
 // Colours

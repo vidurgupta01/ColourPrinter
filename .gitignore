@@ -17,3 +17,5 @@ a.exe
 #########################
 .cproject
 .project
+/Default/
+.settings/org.eclipse.cdt.managedbuilder.core.prefs
