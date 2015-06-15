@@ -34,6 +34,7 @@
 #define light_grey 24
 #define white 7
 
+// Functions
 void cPuts(char *string, unsigned char colour) {
 	HANDLE hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
