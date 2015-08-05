@@ -26,7 +26,7 @@ In your C/C++/Objective-C program, add
 - purple
 - light_purple
 - brown_orange
-- yello
+- yellow
 - light_grey
 - white
 
